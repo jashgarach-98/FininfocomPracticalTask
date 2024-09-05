@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="main_app_color">#4169E1</color>
+
+    <color name="color_odd_numbers">#A9A9A9</color>
+    <color name="color_even_numbers">#FF0000</color>
+    <color name="color_prime_numbers">#0000FF</color>
+    <color name="color_fibonacci_numbers">#008000</color>
+</resources>

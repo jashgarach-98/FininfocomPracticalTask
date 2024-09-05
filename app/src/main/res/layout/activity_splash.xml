@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presenter.activity.SplashActivity">
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvAppTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clMain"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:padding="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnGetStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAppTitle">
+
+
+        <android.view.View
+            android:id="@+id/colorBoxOdd"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/color_odd_numbers"
+            app:layout_constraintEnd_toStartOf="@+id/tvRuleTitleOdd"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvRuleTitleOdd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/rule_1"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/colorBoxOdd"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/colorBoxOdd"
+            app:layout_constraintTop_toTopOf="@+id/colorBoxOdd" />
+
+
+        <android.view.View
+            android:id="@+id/colorBoxEven"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/color_even_numbers"
+            app:layout_constraintEnd_toStartOf="@+id/tvRuleTitleEven"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/colorBoxOdd" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvRuleTitleEven"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/rule_2"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/colorBoxEven"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/colorBoxEven"
+            app:layout_constraintTop_toTopOf="@+id/colorBoxEven" />
+
+
+        <android.view.View
+            android:id="@+id/colorBoxPrimeNo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/color_prime_numbers"
+            app:layout_constraintEnd_toStartOf="@+id/tvRuleTitlePrime"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/colorBoxEven" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvRuleTitlePrime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/rule_3"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/colorBoxPrimeNo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/colorBoxPrimeNo"
+            app:layout_constraintTop_toTopOf="@+id/colorBoxPrimeNo" />
+
+
+        <android.view.View
+            android:id="@+id/colorBoxFibonacci"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/color_fibonacci_numbers"
+            app:layout_constraintEnd_toStartOf="@+id/tvRuleTitleFibonacci"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/colorBoxPrimeNo" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvRuleTitleFibonacci"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/rule_4"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/colorBoxFibonacci"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/colorBoxFibonacci"
+            app:layout_constraintTop_toTopOf="@+id/colorBoxFibonacci" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnGetStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/round_button"
+        android:paddingHorizontal="25dp"
+        android:paddingVertical="20dp"
+        android:text="@string/get_started"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clMain" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

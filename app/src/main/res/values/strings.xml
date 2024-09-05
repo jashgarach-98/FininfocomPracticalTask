@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Code Rule Game</string>
+    <string name="double_tap_to_exit">Press back again to exit</string>
+    <string name="get_started">Get Started</string>
+
+    <string name="rule_1">1. Odd Numbers</string>
+    <string name="rule_2">2. Even Numbers</string>
+    <string name="rule_3">3. Prime Numbers</string>
+    <string name="rule_4">4. Fibonacci sequence numbers</string>
+
+    <string-array name="rules_array">
+        <item>@string/rule_1</item>
+        <item>@string/rule_2</item>
+        <item>@string/rule_3</item>
+        <item>@string/rule_4</item>
+    </string-array>
+
+
+</resources>
